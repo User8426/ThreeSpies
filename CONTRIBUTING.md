@@ -1,0 +1,1 @@
+If you would like to help contribute, please take a look at the projects board to see what needs doing and then setup a pull request with the contributon inside of it. If you would like to reach me about the project for whatever reason (E.G asking if certain assets are needed to be made), please contact me on Discord at ....User#8426 .
