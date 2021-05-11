@@ -5,4 +5,4 @@ Link to the unofficial Two Spies Discord where 1v1v1 matches can be set up / do 
 
 Credits - 
 http://www.freeusandworldmaps.com/html/World_Projections/WorldPrint.html - World Map image
-Original creator of 1v1v1 and for original map - SNP
+Original creator of 1v1v1 and for original map and testing this version - SNP
