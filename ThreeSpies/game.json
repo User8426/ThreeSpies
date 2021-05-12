@@ -428,13 +428,91 @@
         "name": "assets\\EncryptionIcon.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "1-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "1-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "1-2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "1-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "1-3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Screenshot 2021-05-11 205743.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Screenshot 2021-05-11 205743.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewBackgroundMainMenu.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\NewBackgroundMainMenu.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/1-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\1-3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/1-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\1-2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\1-1.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
   },
   "objects": [],
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "Player1",
+      "type": "string",
+      "value": ""
+    }
+  ],
   "layouts": [
     {
       "b": 209,
@@ -461,7 +539,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.3799999999999996
+        "zoomFactor": 0.5799999999999995
       },
       "objectsGroups": [],
       "variables": [],
@@ -491,8 +569,8 @@
           "name": "BoxJoin",
           "persistentUuid": "d6f30ae1-e954-484a-90b6-69d8d2b3f5ea",
           "width": 560,
-          "x": 105,
-          "y": 354,
+          "x": 96,
+          "y": 576,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -507,8 +585,8 @@
           "name": "Join",
           "persistentUuid": "71dc66d9-4394-4d6b-9fff-0b202bc0c0d4",
           "width": 0,
-          "x": 232,
-          "y": 457,
+          "x": 223,
+          "y": 679,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -555,8 +633,8 @@
           "name": "GameScreen",
           "persistentUuid": "40461576-b5ab-4411-95a8-4fa0f57668bd",
           "width": 0,
-          "x": 255,
-          "y": 657,
+          "x": 24,
+          "y": 198,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -565,14 +643,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 833,
+          "height": 813,
           "layer": "",
           "locked": false,
           "name": "NewBackground",
           "persistentUuid": "853d3e6e-8ac6-41e1-a18d-692705fc7a70",
-          "width": 1149,
-          "x": -163,
-          "y": -18,
+          "width": 800,
+          "x": -3,
+          "y": -6,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -584,7 +662,7 @@
           "height": 1500,
           "name": "Background",
           "tags": "",
-          "texture": "assets\\BackgroundMainMenu.png",
+          "texture": "assets\\NewBackgroundMainMenu.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 1500,
           "variables": [],
@@ -739,8 +817,25 @@
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 12988989440,
                   "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\NewBackgroundMainMenu.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
                     {
                       "hasCustomCollisionMask": false,
                       "image": "assets\\StockBackground.jpg",
@@ -903,6 +998,49 @@
             }
           ],
           "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "GlobalVariablePushString"
+              },
+              "parameters": [
+                "Player1",
+                "\"0\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Player1",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         }
       ],
       "layers": [
@@ -956,7 +1094,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.5799999999999996
+        "zoomFactor": 0.5599999999999996
       },
       "objectsGroups": [],
       "variables": [],
@@ -1002,9 +1140,9 @@
           "name": "Info",
           "persistentUuid": "ebeb4b79-10db-4d1e-8df3-e7e1fa82031a",
           "width": 0,
-          "x": 160,
-          "y": 186,
-          "zOrder": 3,
+          "x": 178,
+          "y": 21,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1018,8 +1156,8 @@
           "name": "Box",
           "persistentUuid": "c630bc2b-e000-4794-9c45-7d0a9906e4db",
           "width": 562,
-          "x": 92,
-          "y": 259,
+          "x": 118,
+          "y": 78,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -1034,8 +1172,8 @@
           "name": "ID_Join",
           "persistentUuid": "fd230bad-727d-4c0d-9681-f40ac6ea080d",
           "width": 508,
-          "x": 125,
-          "y": 440,
+          "x": 78,
+          "y": 219,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -1050,8 +1188,8 @@
           "name": "Text",
           "persistentUuid": "8ce8c952-5c9c-4a6f-9615-f37afdfd2f49",
           "width": 451,
-          "x": 137,
-          "y": 292,
+          "x": 163,
+          "y": 111,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -1066,7 +1204,7 @@
           "name": "Message2",
           "persistentUuid": "d34325e8-c910-4b7a-9fda-ad759ceaeb36",
           "width": 494,
-          "x": 108,
+          "x": 53,
           "y": 558,
           "zOrder": 7,
           "numberProperties": [],
@@ -1092,14 +1230,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 89,
+          "height": 156,
           "layer": "",
           "locked": false,
           "name": "Paste",
           "persistentUuid": "07150334-5e46-48b4-b758-08b4b4641ad7",
-          "width": 268,
-          "x": 462,
-          "y": 451,
+          "width": 142,
+          "x": 615,
+          "y": 275,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -1108,15 +1246,111 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 140,
+          "height": 207,
           "layer": "",
           "locked": false,
           "name": "BoxPaste",
           "persistentUuid": "9273ba7e-e27f-469c-bd1e-ef67dc880c91",
-          "width": 334,
-          "x": 429,
-          "y": 422,
+          "width": 208,
+          "x": 582,
+          "y": 246,
           "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 131,
+          "layer": "",
+          "locked": false,
+          "name": "Box2",
+          "persistentUuid": "7a6d3da5-2c81-439d-8275-20f74adb648b",
+          "width": 203,
+          "x": 584,
+          "y": 473,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Connection",
+          "persistentUuid": "782f3cb2-9183-4033-9c61-41e76513e104",
+          "width": 0,
+          "x": 286,
+          "y": 701,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 813,
+          "layer": "",
+          "locked": false,
+          "name": "NewBackground",
+          "persistentUuid": "5cf8703a-a81e-4b07-b303-3762ceb588a0",
+          "width": 800,
+          "x": -3,
+          "y": -6,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 239,
+          "layer": "",
+          "locked": false,
+          "name": "BoxBehindText",
+          "persistentUuid": "c44991fe-61f4-46c7-a3c3-da5da27382a7",
+          "width": 628,
+          "x": -16,
+          "y": 539,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 82,
+          "layer": "",
+          "locked": false,
+          "name": "BoxBehindText",
+          "persistentUuid": "b3450948-b33c-4249-95bc-7d93f02c4899",
+          "width": 723,
+          "x": 45,
+          "y": 1,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 103,
+          "layer": "",
+          "locked": false,
+          "name": "ClickToJoinMessage",
+          "persistentUuid": "ea8fc89f-b959-48e3-a7be-4abeede70544",
+          "width": 177,
+          "x": 596,
+          "y": 491,
+          "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1127,7 +1361,7 @@
           "height": 1500,
           "name": "Background",
           "tags": "",
-          "texture": "assets\\BackgroundMainMenu.png",
+          "texture": "assets\\NewBackgroundMainMenu.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 1500,
           "variables": [],
@@ -1331,6 +1565,161 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Box2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Box.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Connection",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Connected!",
+          "font": "",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "name": "NewBackground",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\NewBackgroundMainMenu.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "BoxBehindText",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Box.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "ClickToJoinMessage",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Click this box when the ID has been entered to attempt to join the game.",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
       "events": [
@@ -1380,6 +1769,18 @@
                 "value": "P2P::UseDefaultBroker"
               },
               "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Player1",
+                "=",
+                "0"
+              ],
               "subInstructions": []
             }
           ],
@@ -1441,8 +1842,58 @@
                 "\"Connecting\""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "Connection"
+              ],
+              "subInstructions": []
             }
           ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::OnEvent"
+              },
+              "parameters": [
+                "\"Connection\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Montre"
+              },
+              "parameters": [
+                "Connection",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
           "events": []
         },
         {
@@ -1496,16 +1947,79 @@
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
                 "inverted": false,
-                "value": "KeyPressed"
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Box2",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "ClickToJoinMessage",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ]
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "Player1",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
               },
               "parameters": [
                 "",
-                "Return"
+                "Left"
               ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
               "subInstructions": []
             }
           ],
@@ -1666,6 +2180,14 @@
                 "Left"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
             }
           ],
           "actions": [
@@ -1710,14 +2232,6 @@
           },
           "comment": "Player Counter",
           "comment2": ""
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
-          "events": []
         }
       ],
       "layers": [
@@ -1771,10 +2285,16 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.5399999999999999
+        "zoomFactor": 0.4400000000000001
       },
       "objectsGroups": [],
-      "variables": [],
+      "variables": [
+        {
+          "name": "PlayerCount",
+          "type": "string",
+          "value": ""
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -1817,8 +2337,8 @@
           "name": "CopyID",
           "persistentUuid": "3b73c35a-1fa1-49c4-b650-3a1c67429f58",
           "width": 0,
-          "x": 169,
-          "y": 284,
+          "x": 158,
+          "y": 141,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -1833,8 +2353,8 @@
           "name": "PlayerCountStart",
           "persistentUuid": "6b8ea4e8-fcf8-4958-a56c-8c803f50792e",
           "width": 0,
-          "x": 177,
-          "y": 470,
+          "x": 193,
+          "y": 499,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -1849,8 +2369,8 @@
           "name": "PlayerCountEnd",
           "persistentUuid": "5f2cfc92-3b5a-405c-a94d-c826a9d711d9",
           "width": 0,
-          "x": 392,
-          "y": 470,
+          "x": 408,
+          "y": 499,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -1865,8 +2385,8 @@
           "name": "PlayerCountMiddle",
           "persistentUuid": "6ef87ad6-80c9-4fba-8be6-de7b0a684e05",
           "width": 0,
-          "x": 363,
-          "y": 470,
+          "x": 379,
+          "y": 499,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -1875,15 +2395,79 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 178,
+          "height": 123,
           "layer": "",
           "locked": false,
           "name": "Message",
           "persistentUuid": "4cbe7251-967b-40ac-82bf-1a7843b860c8",
           "width": 753,
-          "x": 33,
-          "y": 594,
+          "x": 35,
+          "y": 653,
           "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "PlayerCountFrames",
+          "persistentUuid": "a2f40a0c-9459-488c-b904-2456ff38f15d",
+          "width": 0,
+          "x": 359,
+          "y": 422,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 813,
+          "layer": "",
+          "locked": false,
+          "name": "NewBackground",
+          "persistentUuid": "22fb4f58-1e30-47a2-8a37-5c8959c45c96",
+          "width": 800,
+          "x": -3,
+          "y": -6,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 203,
+          "layer": "",
+          "locked": false,
+          "name": "BehindTextBox",
+          "persistentUuid": "ffbfe0b4-9997-4512-819e-7da6cb219850",
+          "width": 815,
+          "x": -6,
+          "y": 593,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 109,
+          "layer": "",
+          "locked": false,
+          "name": "BehindTextBox",
+          "persistentUuid": "149433c8-da39-4957-ad01-9c0f616d923c",
+          "width": 542,
+          "x": 123,
+          "y": 116,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1894,7 +2478,7 @@
           "height": 1500,
           "name": "Background",
           "tags": "",
-          "texture": "assets\\BackgroundMainMenu.png",
+          "texture": "assets\\NewBackgroundMainMenu.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 1500,
           "variables": [],
@@ -2013,6 +2597,157 @@
             "g": 0,
             "r": 0
           }
+        },
+        {
+          "name": "PlayerCountFrames",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Frames",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 1000000000,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\1-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\1-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\1-3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "NewBackground",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\NewBackgroundMainMenu.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "BehindTextBox",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Box.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -2075,6 +2810,42 @@
                 "\"1\""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Player1",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Player2",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Player1",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -2101,6 +2872,18 @@
               },
               "parameters": [
                 "ID",
+                "=",
+                "P2P::GetID()"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "Player1",
                 "=",
                 "P2P::GetID()"
               ],
@@ -2233,12 +3016,83 @@
             {
               "type": {
                 "inverted": false,
+                "value": "ChangeSprite"
+              },
+              "parameters": [
+                "PlayerCountFrames",
+                "*",
+                "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "TextObject::String"
               },
               "parameters": [
                 "PlayerCountMiddle",
-                "+",
-                "\"1\""
+                "=",
+                "\"2\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::OnConnection"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAll"
+              },
+              "parameters": [
+                "\"Connection\"",
+                "\"\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PauseAnimation"
+              },
+              "parameters": [
+                "PlayerCountFrames"
               ],
               "subInstructions": []
             }
@@ -2268,12 +3122,12 @@
             {
               "type": {
                 "inverted": false,
-                "value": "TextObject::String"
+                "value": "Sprite"
               },
               "parameters": [
-                "PlayerCountMiddle",
+                "PlayerCountFrames",
                 "=",
-                "\"3\""
+                "3"
               ],
               "subInstructions": []
             }
@@ -2324,16 +3178,115 @@
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::OnConnection"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "PlayerCount",
+                "+",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": []
         },
         {
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::OnConnection"
+              },
+              "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarScene"
+              },
+              "parameters": [
+                "PlayerCount",
+                "=",
+                "2"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Game\"",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAll"
+              },
+              "parameters": [
+                "\"All Players Connected\"",
+                "\"\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "PlayerCount",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": []
         }
       ],
