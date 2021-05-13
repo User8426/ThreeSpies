@@ -2153,7 +2153,7 @@
               },
               "parameters": [
                 "",
-                "\"Game\"",
+                "\"DEBUG SCENE\"",
                 ""
               ],
               "subInstructions": []
@@ -2276,8 +2276,107 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Player Counter",
+          "comment": "ID",
           "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::OnEvent"
+              },
+              "parameters": [
+                "\"P1 Data\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "Player1",
+                "=",
+                "P2P::GetEventData(\"P1 Data\")"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::OnEvent"
+              },
+              "parameters": [
+                "\"P2 Data\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "Player2",
+                "=",
+                "P2P::GetEventData(\"P2 Data\")"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::OnEvent"
+              },
+              "parameters": [
+                "\"P3 Data\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "Player3",
+                "=",
+                "P2P::GetEventData(\"P3 Data\")"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         }
       ],
       "layers": [
@@ -2337,6 +2436,21 @@
       "variables": [
         {
           "name": "PlayerCount",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "Player1",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "Player2",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "Player3",
           "type": "string",
           "value": ""
         }
@@ -2463,8 +2577,8 @@
           "name": "PlayerCountFrames",
           "persistentUuid": "a2f40a0c-9459-488c-b904-2456ff38f15d",
           "width": 0,
-          "x": 359,
-          "y": 422,
+          "x": 366,
+          "y": 965,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -2934,6 +3048,18 @@
                 "P2P::GetID()"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "Player1",
+                "=",
+                "GlobalVariableString(Player1)"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -3186,7 +3312,7 @@
               },
               "parameters": [
                 "",
-                "\"Game\"",
+                "\"DEBUG SCENE\"",
                 ""
               ],
               "subInstructions": []
@@ -3217,7 +3343,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Other",
+          "comment": "Player Count Stuff",
           "comment2": ""
         },
         {
@@ -3284,7 +3410,7 @@
               },
               "parameters": [
                 "",
-                "\"Game\"",
+                "\"DEBUG SCENE\"",
                 ""
               ],
               "subInstructions": []
@@ -3333,6 +3459,236 @@
               "subInstructions": []
             }
           ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Set ID as Player",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::OnConnection"
+              },
+              "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "Player2",
+                "=",
+                "\"0\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "Player2",
+                "=",
+                "P2P::GetLastConnectedPeer()"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "Player2",
+                "=",
+                "P2P::GetLastConnectedPeer()"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::OnConnection"
+              },
+              "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "Player2",
+                "!=",
+                "\"0\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "Player3",
+                "=",
+                "P2P::GetLastConnectedPeer()"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "Player3",
+                "=",
+                "P2P::GetLastConnectedPeer()"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P2 Data\"",
+                "Player2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P3 Data\"",
+                "Player3"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P1 Data\"",
+                "Player1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::OnEvent"
+              },
+              "parameters": [
+                "\"All Players Connected\"",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "PlayerCountStart",
+                "=",
+                "\"452452\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P1 Data\"",
+                "Player1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P2 Data\"",
+                "Player2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P3 Data\"",
+                "Player3"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
           "events": []
         }
       ],
@@ -7437,6 +7793,539 @@
         {
           "ambientLightColorB": 0,
           "ambientLightColorG": 262144,
+          "ambientLightColorR": 0,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": []
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "DEBUG_32SCENE",
+      "name": "DEBUG SCENE",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "snap": true,
+        "windowMask": false,
+        "zoomFactor": 0.6799999999999999
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 838,
+          "layer": "",
+          "locked": false,
+          "name": "BACKGROUND",
+          "persistentUuid": "53abe73c-664a-4208-a83b-6392940b6aec",
+          "width": 834,
+          "x": -16,
+          "y": -23,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "P1",
+          "persistentUuid": "448cb667-ec93-49f3-a958-bc669f065ee7",
+          "width": 0,
+          "x": 20,
+          "y": 20,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "P2",
+          "persistentUuid": "1c1ab056-e9f9-4adc-8071-c7836a41501f",
+          "width": 0,
+          "x": 20,
+          "y": 100,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "P3",
+          "persistentUuid": "ee9546ba-a8ef-41d0-bbaf-e25f14679e3d",
+          "width": 0,
+          "x": 20,
+          "y": 180,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "P1SMALL",
+          "persistentUuid": "5ed75d77-4990-4e3b-9846-796446eee21c",
+          "width": 0,
+          "x": 20,
+          "y": 327,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Box",
+          "persistentUuid": "c593d1ed-6804-4861-8f4e-9f4b731acedb",
+          "width": 0,
+          "x": 30,
+          "y": 479,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Test",
+          "persistentUuid": "550d4cd1-e8fa-4fee-b59f-5a6e1c409093",
+          "width": 0,
+          "x": 322,
+          "y": 351,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "height": 128,
+          "name": "BACKGROUND",
+          "tags": "",
+          "texture": "assets\\BackgroundMainMenu.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 128,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "P1",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "P1 ID = ",
+          "font": "",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "P2",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "P2 ID = ",
+          "font": "",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "P3",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "P3 ID = ",
+          "font": "",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "P1SMALL",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "P1 - ",
+          "font": "",
+          "characterSize": 15,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "name": "Box",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Box.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Test",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Text",
+          "font": "",
+          "characterSize": 60,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        }
+      ],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Set ID",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "P1",
+                "+",
+                "GlobalVariableString(Player1)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "P2",
+                "+",
+                "GlobalVariableString(Player2)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "P3",
+                "+",
+                "GlobalVariableString(Player3)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "P1SMALL",
+                "+",
+                "GlobalVariableString(Player1)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Cache"
+              },
+              "parameters": [
+                "Test"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Box",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Montre"
+              },
+              "parameters": [
+                "Test",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Box",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToOne"
+              },
+              "parameters": [
+                "GlobalVariableString(Player2)",
+                "\"DebugP2\"",
+                "\"\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::OnEvent"
+              },
+              "parameters": [
+                "\"DebugP2\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Montre"
+              },
+              "parameters": [
+                "Test",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 0,
+          "ambientLightColorG": 0,
           "ambientLightColorR": 0,
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
