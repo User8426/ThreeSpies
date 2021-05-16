@@ -512,6 +512,21 @@
       "name": "CurrentPlayer",
       "type": "string",
       "value": ""
+    },
+    {
+      "name": "P1Position",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "name": "P2Position",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "name": "P3Position",
+      "type": "string",
+      "value": ""
     }
   ],
   "layouts": [
@@ -3640,7 +3655,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.8100000000000015
+        "zoomFactor": 1.0300000000000016
       },
       "objectsGroups": [],
       "variables": [
@@ -3654,7 +3669,17 @@
           "type": "structure",
           "children": [
             {
-              "name": "ChildVariable",
+              "name": "Canada",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Libya",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Norway",
               "type": "string",
               "value": ""
             }
@@ -3663,107 +3688,468 @@
         {
           "name": "USA",
           "type": "structure",
-          "children": []
+          "children": [
+            {
+              "name": "Canada",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Mali",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Mexico",
+              "type": "string",
+              "value": ""
+            }
+          ]
         },
         {
           "name": "Mexico",
           "type": "structure",
-          "children": []
+          "children": [
+            {
+              "name": "Colombia",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "USA",
+              "type": "string",
+              "value": ""
+            }
+          ]
         },
         {
-          "name": "Colmbia",
+          "name": "Colombia",
           "type": "structure",
-          "children": []
+          "children": [
+            {
+              "name": "Brazil",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Mali",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Mexico",
+              "type": "string",
+              "value": ""
+            }
+          ]
         },
         {
           "name": "Bolivia",
           "type": "structure",
-          "children": []
+          "children": [
+            {
+              "name": "Argentina",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Brazil",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Congo",
+              "type": "string",
+              "value": ""
+            }
+          ]
         },
         {
           "name": "Brazil",
           "type": "structure",
-          "children": []
+          "children": [
+            {
+              "name": "Bolivia",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Colombia",
+              "type": "string",
+              "value": ""
+            }
+          ]
         },
         {
           "name": "Norway",
           "type": "structure",
-          "children": []
+          "children": [
+            {
+              "name": "Greenland",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Russia",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Ukraine",
+              "type": "string",
+              "value": ""
+            }
+          ]
         },
         {
           "name": "Ukraine",
           "type": "structure",
-          "children": []
+          "children": [
+            {
+              "name": "Iraq",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Libya",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Norway",
+              "type": "string",
+              "value": ""
+            }
+          ]
         },
         {
           "name": "Russia",
           "type": "structure",
-          "children": []
+          "children": [
+            {
+              "name": "China",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Iraq",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Japan",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Norway",
+              "type": "string",
+              "value": ""
+            }
+          ]
         },
         {
           "name": "China",
           "type": "structure",
-          "children": []
+          "children": [
+            {
+              "name": "India",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Japan",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Russia",
+              "type": "string",
+              "value": ""
+            }
+          ]
         },
         {
           "name": "Iraq",
           "type": "structure",
-          "children": []
+          "children": [
+            {
+              "name": "India",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Libya",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Russia",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Ukraine",
+              "type": "string",
+              "value": ""
+            }
+          ]
         },
         {
           "name": "India",
           "type": "structure",
-          "children": []
+          "children": [
+            {
+              "name": "China",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Indonesia",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Iraq",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Madagascar",
+              "type": "string",
+              "value": ""
+            }
+          ]
         },
         {
           "name": "South Africa",
           "type": "structure",
-          "children": []
+          "children": [
+            {
+              "name": "Argentina",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Congo",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Madagascar",
+              "type": "string",
+              "value": ""
+            }
+          ]
         },
         {
           "name": "Madagascar",
           "type": "structure",
-          "children": []
+          "children": [
+            {
+              "name": "Australia",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Congo",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "India",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "South Africa",
+              "type": "string",
+              "value": ""
+            }
+          ]
         },
         {
           "name": "Indonesia",
           "type": "structure",
-          "children": []
+          "children": [
+            {
+              "name": "Australia",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "India",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Japan",
+              "type": "string",
+              "value": ""
+            }
+          ]
         },
         {
           "name": "Australia",
           "type": "structure",
-          "children": []
+          "children": [
+            {
+              "name": "Indonesia",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Madagascar",
+              "type": "string",
+              "value": ""
+            }
+          ]
         },
         {
           "name": "Canada",
           "type": "structure",
-          "children": []
+          "children": [
+            {
+              "name": "Greenland",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "USA",
+              "type": "string",
+              "value": ""
+            }
+          ]
         },
         {
           "name": "Argentina",
           "type": "structure",
-          "children": []
+          "children": [
+            {
+              "name": "Bolivia",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "South Africa",
+              "type": "string",
+              "value": ""
+            }
+          ]
         },
         {
           "name": "Japan",
           "type": "structure",
-          "children": []
+          "children": [
+            {
+              "name": "China",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Indonesia",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Russia",
+              "type": "string",
+              "value": ""
+            }
+          ]
         },
         {
           "name": "Mali",
           "type": "structure",
-          "children": []
+          "children": [
+            {
+              "name": "Colombia",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Libya",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "USA",
+              "type": "string",
+              "value": ""
+            }
+          ]
         },
         {
           "name": "Libya",
           "type": "structure",
-          "children": []
+          "children": [
+            {
+              "name": "Congo",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Greenland",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Iraq",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Mali",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Ukraine",
+              "type": "string",
+              "value": ""
+            }
+          ]
         },
         {
           "name": "Congo",
           "type": "structure",
-          "children": []
+          "children": [
+            {
+              "name": "Bolivia",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Libya",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Madagascar",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "South Africa",
+              "type": "string",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "name": "P1Position",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "P2Position",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "P3Position",
+          "type": "string",
+          "value": ""
         }
       ],
       "instances": [
@@ -3889,7 +4275,7 @@
           "persistentUuid": "0b777cc4-3eb4-48cb-bd3e-47e30eb98486",
           "width": 38,
           "x": 251,
-          "y": 425,
+          "y": 408,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -4257,7 +4643,7 @@
           "persistentUuid": "c0ba206b-0ecd-4a05-a43d-f54be4d9a424",
           "width": 50,
           "x": 245,
-          "y": 447,
+          "y": 430,
           "zOrder": 31,
           "numberProperties": [],
           "stringProperties": [],
@@ -4400,8 +4786,8 @@
           "name": "Brazil_Name",
           "persistentUuid": "0892261b-12eb-47dd-845b-77ef1dea4821",
           "width": 0,
-          "x": 287,
-          "y": 473,
+          "x": 283,
+          "y": 426,
           "zOrder": 40,
           "numberProperties": [],
           "stringProperties": [],
@@ -4861,23 +5247,23 @@
           "initialVariables": []
         },
         {
-          "angle": 32.307373046875,
+          "angle": 25.91687774658203,
           "customSize": true,
           "height": 6,
           "layer": "",
           "locked": false,
           "name": "Road_Brazil_Colombia",
           "persistentUuid": "56425c2a-27c7-435c-80d8-ef271f8c8a86",
-          "width": 71,
-          "x": 207,
-          "y": 449,
+          "width": 63,
+          "x": 210,
+          "y": 443,
           "zOrder": 69,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         },
         {
-          "angle": -17.10272979736328,
+          "angle": -31.613788604736328,
           "customSize": true,
           "height": 6,
           "layer": "",
@@ -4886,7 +5272,7 @@
           "persistentUuid": "ba89efe3-91e4-4202-ba68-f72d970ae26c",
           "width": 50,
           "x": 226,
-          "y": 473,
+          "y": 469,
           "zOrder": 70,
           "numberProperties": [],
           "stringProperties": [],
@@ -5320,6 +5706,38 @@
           "x": 559,
           "y": 308,
           "zOrder": 97,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": -11.536545753479004,
+          "customSize": true,
+          "height": 6,
+          "layer": "",
+          "locked": false,
+          "name": "Road_Bolivia_Congo",
+          "persistentUuid": "cc9b7bbc-1c1a-494a-989b-004367e5298f",
+          "width": 201,
+          "x": 230,
+          "y": 462,
+          "zOrder": 98,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 39,
+          "layer": "",
+          "locked": false,
+          "name": "Pin1",
+          "persistentUuid": "2a63bcae-931a-4814-9e8f-4d9d5685e008",
+          "width": 31,
+          "x": 452,
+          "y": 258,
+          "zOrder": 99,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -7183,7 +7601,13 @@
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "In_Lockdown",
+              "type": "string",
+              "value": ""
+            }
+          ],
           "behaviors": [],
           "animations": [
             {
@@ -10772,6 +11196,45 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Road_Bolivia_Congo",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Cities\\Road.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -10908,6 +11371,42 @@
                 "CurrentPlayer",
                 "=",
                 "\"1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "=",
+                "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Russia",
+                "In_Lockdown",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Norway\""
               ],
               "subInstructions": []
             }
@@ -11444,8 +11943,52 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Move",
+          "comment": "Move P1",
           "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::OnEvent"
+              },
+              "parameters": [
+                "\"P1Move\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::GetEventVariable"
+              },
+              "parameters": [
+                "\"P1Move\"",
+                "P1Position"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Opacity"
+              },
+              "parameters": [
+                "Pin1",
+                "=",
+                "128"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         },
         {
           "disabled": false,
@@ -11515,10 +12058,9 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ObjectVariableChildExists"
+                "value": "VariableChildExists"
               },
               "parameters": [
-                "Australia",
                 "Australia",
                 "GlobalVariableString(P1Position)"
               ],
@@ -11549,6 +12091,53 @@
             {
               "type": {
                 "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Australia\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P1Move\"",
+                "P1Position"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Australia\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "MettreXY"
               },
               "parameters": [
@@ -11557,6 +12146,133 @@
                 "647",
                 "=",
                 "442"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "VariableString(Client)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Russia",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "RedActions",
+                "!=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Russia",
+                "In_Lockdown",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "!=",
+                "\"Russia\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VariableChildExists"
+              },
+              "parameters": [
+                "Russia",
+                "GlobalVariableString(P1Position)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Pin1",
+                "=",
+                "581",
+                "=",
+                "225"
               ],
               "subInstructions": []
             },
@@ -11580,7 +12296,30 @@
               "parameters": [
                 "P1Position",
                 "=",
-                "\"Australia\""
+                "\"Russia\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P1Move\"",
+                "P1Position"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Russia\""
               ],
               "subInstructions": []
             }
@@ -11595,6 +12334,31 @@
             {
               "type": {
                 "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "VariableString(Client)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Greenland",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "MouseButtonPressed"
               },
               "parameters": [
@@ -11603,6 +12367,1014 @@
               ],
               "subInstructions": []
             },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "RedActions",
+                "!=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Greenland",
+                "In_Lockdown",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "!=",
+                "\"Russia\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VariableChildExists"
+              },
+              "parameters": [
+                "Greenland",
+                "GlobalVariableString(P1Position)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Pin1",
+                "=",
+                "261",
+                "=",
+                "171"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Greenland\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P1Move\"",
+                "P1Position"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Greenland\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "VariableString(Client)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "USA",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "RedActions",
+                "!=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "USA",
+                "In_Lockdown",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VariableChildExists"
+              },
+              "parameters": [
+                "USA",
+                "GlobalVariableString(P1Position)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "!=",
+                "\"USA\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Pin1",
+                "=",
+                "122",
+                "=",
+                "305"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"USA\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P1Move\"",
+                "P1Position"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"USA\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "VariableString(Client)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Mexico",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "RedActions",
+                "!=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Mexico",
+                "In_Lockdown",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VariableChildExists"
+              },
+              "parameters": [
+                "Mexico",
+                "GlobalVariableString(P1Position)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "!=",
+                "\"Mexico\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Pin1",
+                "=",
+                "135",
+                "=",
+                "349"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Mexico\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P1Move\"",
+                "P1Position"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Mexico\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "VariableString(Client)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Colombia",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Colombia",
+                "In_Lockdown",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "!=",
+                "\"Colombia\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "RedActions",
+                "!=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VariableChildExists"
+              },
+              "parameters": [
+                "Colombia",
+                "GlobalVariableString(P1Position)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Pin1",
+                "=",
+                "200",
+                "=",
+                "400"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Colombia\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P1Move\"",
+                "P1Position"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Colombia\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "VariableString(Client)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Bolivia",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Bolivia",
+                "In_Lockdown",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "!=",
+                "\"Bolivia\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "RedActions",
+                "!=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VariableChildExists"
+              },
+              "parameters": [
+                "Bolivia",
+                "GlobalVariableString(P1Position)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Pin1",
+                "=",
+                "215",
+                "=",
+                "447"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P1Move\"",
+                "P1Position"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Bolivia\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Bolivia\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "VariableString(Client)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Brazil",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Brazil",
+                "In_Lockdown",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "!=",
+                "\"Brazil\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "RedActions",
+                "!=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VariableChildExists"
+              },
+              "parameters": [
+                "Brazil",
+                "GlobalVariableString(P1Position)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Pin1",
+                "=",
+                "251",
+                "=",
+                "408"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P1Move\"",
+                "P1Position"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Brazil\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Brazil\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
               "type": {
                 "inverted": false,
@@ -11627,10 +13399,1683 @@
                 ""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Norway",
+                "In_Lockdown",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "!=",
+                "\"Norway\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "RedActions",
+                "!=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VariableChildExists"
+              },
+              "parameters": [
+                "Norway",
+                "GlobalVariableString(P1Position)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Pin1",
+                "=",
+                "387",
+                "=",
+                "258"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P1Move\"",
+                "P1Position"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Norway\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Norway\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "VariableString(Client)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Ukraine",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Ukraine",
+                "In_Lockdown",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "!=",
+                "\"Ukraine\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "RedActions",
+                "!=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VariableChildExists"
+              },
+              "parameters": [
+                "Ukraine",
+                "GlobalVariableString(P1Position)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Pin1",
+                "=",
+                "452",
+                "=",
+                "258"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P1Move\"",
+                "P1Position"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Ukraine\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Ukraine\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "VariableString(Client)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "China",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "China",
+                "In_Lockdown",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "!=",
+                "\"China\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "RedActions",
+                "!=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VariableChildExists"
+              },
+              "parameters": [
+                "China",
+                "GlobalVariableString(P1Position)"
+              ],
+              "subInstructions": []
             }
           ],
           "actions": [],
           "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "VariableString(Client)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Iraq",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Iraq",
+                "In_Lockdown",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "!=",
+                "\"Iraq\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "RedActions",
+                "!=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VariableChildExists"
+              },
+              "parameters": [
+                "Iraq",
+                "GlobalVariableString(P1Position)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "VariableString(Client)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "India",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "India",
+                "In_Lockdown",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "!=",
+                "\"India\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "RedActions",
+                "!=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VariableChildExists"
+              },
+              "parameters": [
+                "India",
+                "GlobalVariableString(P1Position)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "VariableString(Client)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "South_Africa",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "South_Africa",
+                "In_Lockdown",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "!=",
+                "\"South_Africa\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "RedActions",
+                "!=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VariableChildExists"
+              },
+              "parameters": [
+                "South Africa",
+                "GlobalVariableString(P1Position)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "VariableString(Client)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Madagascar",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Madagascar",
+                "In_Lockdown",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "!=",
+                "\"Madagascar\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "RedActions",
+                "!=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VariableChildExists"
+              },
+              "parameters": [
+                "Madagascar",
+                "GlobalVariableString(P1Position)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "VariableString(Client)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Indonesia",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Indonesia",
+                "In_Lockdown",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "!=",
+                "\"Indonesia\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "RedActions",
+                "!=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VariableChildExists"
+              },
+              "parameters": [
+                "Indonesia",
+                "GlobalVariableString(P1Position)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "VariableString(Client)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Canada",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Canada",
+                "In_Lockdown",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "!=",
+                "\"Canada\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "RedActions",
+                "!=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VariableChildExists"
+              },
+              "parameters": [
+                "Canada",
+                "GlobalVariableString(P1Position)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "VariableString(Client)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Argentina",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Argentina",
+                "In_Lockdown",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "!=",
+                "\"Argentina\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "RedActions",
+                "!=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VariableChildExists"
+              },
+              "parameters": [
+                "Argentina",
+                "GlobalVariableString(P1Position)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "VariableString(Client)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Japan",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Japan",
+                "In_Lockdown",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "!=",
+                "\"Japan\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "RedActions",
+                "!=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VariableChildExists"
+              },
+              "parameters": [
+                "Japan",
+                "GlobalVariableString(P1Position)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "VariableString(Client)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Mali",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Mali",
+                "In_Lockdown",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "!=",
+                "\"Mali\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "RedActions",
+                "!=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VariableChildExists"
+              },
+              "parameters": [
+                "Mali",
+                "GlobalVariableString(P1Position)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "VariableString(Client)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Libya",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Libya",
+                "In_Lockdown",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "!=",
+                "\"Libya\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "RedActions",
+                "!=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VariableChildExists"
+              },
+              "parameters": [
+                "Libya",
+                "GlobalVariableString(P1Position)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "VariableString(Client)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "Democratic_Republic_of_the_Congo",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Democratic_Republic_of_the_Congo",
+                "In_Lockdown",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "!=",
+                "\"Congo\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "RedActions",
+                "!=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "VariableChildExists"
+              },
+              "parameters": [
+                "Congo",
+                "GlobalVariableString(P1Position)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Move P2",
+          "comment2": ""
         }
       ],
       "layers": [
