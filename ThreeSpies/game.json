@@ -570,7 +570,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.5799999999999995
+        "zoomFactor": 0.6999999999999997
       },
       "objectsGroups": [],
       "variables": [],
@@ -683,6 +683,22 @@
           "x": -3,
           "y": -6,
           "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "GameScreen",
+          "persistentUuid": "a4d88227-2aa4-47a5-af2d-04805064ccaf",
+          "width": 0,
+          "x": 22,
+          "y": 221,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
