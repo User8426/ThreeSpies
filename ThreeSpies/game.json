@@ -527,6 +527,21 @@
       "name": "P3Position",
       "type": "string",
       "value": ""
+    },
+    {
+      "name": "Intel",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "name": "BonusOwned",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "name": "NormalOwned",
+      "type": "string",
+      "value": ""
     }
   ],
   "layouts": [
@@ -3655,7 +3670,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 1.0300000000000016
+        "zoomFactor": 0.6500000000000012
       },
       "objectsGroups": [],
       "variables": [
@@ -4241,7 +4256,7 @@
           "locked": false,
           "name": "UseActionButton",
           "persistentUuid": "6bc69880-eef2-431a-a696-b47c942426c8",
-          "width": 390,
+          "width": 190,
           "x": 197,
           "y": -2,
           "zOrder": 6,
@@ -4322,8 +4337,8 @@
           "name": "IntelCount",
           "persistentUuid": "6126dc6b-feee-49bf-b781-6012e9150b2c",
           "width": 0,
-          "x": 14,
-          "y": 438,
+          "x": 1,
+          "y": 433,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -5722,6 +5737,38 @@
           "x": 230,
           "y": 462,
           "zOrder": 98,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 23,
+          "layer": "",
+          "locked": false,
+          "name": "Intel_Display",
+          "persistentUuid": "d07a8eea-5ee2-4ba5-b53f-1e1f9a12e1cd",
+          "width": 42,
+          "x": 54,
+          "y": 433,
+          "zOrder": 103,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 148,
+          "layer": "",
+          "locked": false,
+          "name": "IntelGain",
+          "persistentUuid": "d959a8bb-2755-4b1a-9ab7-d97d2b805cf1",
+          "width": 177,
+          "x": 391,
+          "y": 5,
+          "zOrder": 104,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -11219,6 +11266,64 @@
               ]
             }
           ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Intel_Display",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "0",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "name": "IntelGain",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Box.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -11909,6 +12014,141 @@
                 "Client",
                 "=",
                 "3"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Intel",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "VariableString(Client)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Intel",
+                "+",
+                "(GlobalVariable(BonusOwned)*3)+(GlobalVariable(NormalOwned)) + 3"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Intel_Display",
+                "=",
+                "GlobalVariableString(Intel)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "SourisSurObjet"
+              },
+              "parameters": [
+                "IntelGain",
+                "",
+                "",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Intel",
+                "+",
+                "5"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Intel_Display",
+                "=",
+                "GlobalVariableString(Intel)"
               ],
               "subInstructions": []
             }
