@@ -4212,7 +4212,7 @@
           "width": 31,
           "x": 387,
           "y": 238,
-          "zOrder": 4,
+          "zOrder": 102,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4260,7 +4260,7 @@
           "width": 36,
           "x": 647,
           "y": 442,
-          "zOrder": 7,
+          "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4276,7 +4276,7 @@
           "width": 38,
           "x": 251,
           "y": 408,
-          "zOrder": 8,
+          "zOrder": 101,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5722,22 +5722,6 @@
           "x": 230,
           "y": 462,
           "zOrder": 98,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 39,
-          "layer": "",
-          "locked": false,
-          "name": "Pin1",
-          "persistentUuid": "2a63bcae-931a-4814-9e8f-4d9d5685e008",
-          "width": 31,
-          "x": 452,
-          "y": 258,
-          "zOrder": 99,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -13827,7 +13811,69 @@
               "subInstructions": []
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Pin1",
+                "=",
+                "597",
+                "=",
+                "316"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P1Move\"",
+                "P1Position"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"China\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"China\""
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": []
         },
         {
@@ -13939,7 +13985,69 @@
               "subInstructions": []
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Pin1",
+                "=",
+                "505",
+                "=",
+                "327"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P1Move\"",
+                "P1Position"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Iraq\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Iraq\""
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": []
         },
         {
@@ -14051,7 +14159,69 @@
               "subInstructions": []
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Pin1",
+                "=",
+                "530",
+                "=",
+                "357"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P1Move\"",
+                "P1Position"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"India\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"India\""
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": []
         },
         {
@@ -14163,7 +14333,69 @@
               "subInstructions": []
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Pin1",
+                "=",
+                "400",
+                "=",
+                "465"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P1Move\"",
+                "P1Position"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"South_Africa\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"South_Africa\""
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": []
         },
         {
@@ -14275,7 +14507,69 @@
               "subInstructions": []
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Pin1",
+                "=",
+                "460",
+                "=",
+                "455"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P1Move\"",
+                "P1Position"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Madagascar\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Madagascar\""
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": []
         },
         {
@@ -14387,7 +14681,69 @@
               "subInstructions": []
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Pin1",
+                "=",
+                "600",
+                "=",
+                "400"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P1Move\"",
+                "P1Position"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Indonesia\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Indonesia\""
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": []
         },
         {
@@ -14499,7 +14855,69 @@
               "subInstructions": []
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Pin1",
+                "=",
+                "125",
+                "=",
+                "245"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P1Move\"",
+                "P1Position"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Canada\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Canada\""
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": []
         },
         {
@@ -14611,7 +15029,69 @@
               "subInstructions": []
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Pin1",
+                "=",
+                "220",
+                "=",
+                "489"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P1Move\"",
+                "P1Position"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Argentina\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Argentina\""
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": []
         },
         {
@@ -14723,7 +15203,69 @@
               "subInstructions": []
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Pin1",
+                "=",
+                "665",
+                "=",
+                "307"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P1Move\"",
+                "P1Position"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Japan\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Japan\""
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": []
         },
         {
@@ -14835,7 +15377,69 @@
               "subInstructions": []
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Pin1",
+                "=",
+                "348",
+                "=",
+                "365"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P1Move\"",
+                "P1Position"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Mali\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Mali\""
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": []
         },
         {
@@ -14947,7 +15551,69 @@
               "subInstructions": []
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Pin1",
+                "=",
+                "384",
+                "=",
+                "336"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P1Move\"",
+                "P1Position"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Libya\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Libya\""
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": []
         },
         {
@@ -15059,7 +15725,69 @@
               "subInstructions": []
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "Pin1",
+                "=",
+                "406",
+                "=",
+                "406"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAllVariable"
+              },
+              "parameters": [
+                "\"P1Move\"",
+                "P1Position"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Congo\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarSceneTxt"
+              },
+              "parameters": [
+                "P1Position",
+                "=",
+                "\"Congo\""
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": []
         },
         {
