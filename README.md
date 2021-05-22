@@ -7,3 +7,5 @@ Credits -
 http://www.freeusandworldmaps.com/html/World_Projections/WorldPrint.html - World Map image
 
 Original creator of 1v1v1 and for original map and testing this version and even helping with providing ideas on how to code some parts. - SNP
+
+Allowing me to ask for help on their discord server - OE-O Discord (https://discord.com/invite/yDCsygY)
