@@ -12458,6 +12458,147 @@
                 "2"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAll"
+              },
+              "parameters": [
+                "\"P1ENDTURN\"",
+                "\"\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::OnEvent"
+              },
+              "parameters": [
+                "\"P1ENDTURN\"",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"2\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "BlueActions",
+                "=",
+                "2"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Animation"
+              },
+              "parameters": [
+                "BlueActions",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"3\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "OrangeActions",
+                "=",
+                "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAll"
+              },
+              "parameters": [
+                "\"P2ENDTURN\"",
+                "\"\""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -12478,23 +12619,11 @@
             {
               "type": {
                 "inverted": false,
-                "value": "VarGlobal"
+                "value": "P2P::OnEvent"
               },
               "parameters": [
-                "CurrentPlayer",
-                "=",
-                "2"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "AnimationName"
-              },
-              "parameters": [
-                "BlueActions",
-                "\"OutOfActions\""
+                "\"P1ENDTURN\"",
+                ""
               ],
               "subInstructions": []
             }
@@ -12535,14 +12664,6 @@
             {
               "type": {
                 "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": [],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
                 "value": "VarGlobal"
               },
               "parameters": [
@@ -12555,11 +12676,84 @@
             {
               "type": {
                 "inverted": false,
-                "value": "AnimationName"
+                "value": "Animation"
               },
               "parameters": [
                 "OrangeActions",
-                "\"OutOfActions\""
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobalTxt"
+              },
+              "parameters": [
+                "CurrentPlayer",
+                "=",
+                "\"1\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "=",
+                "2"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToAll"
+              },
+              "parameters": [
+                "\"P3ENDTURN\"",
+                "\"\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::OnEvent"
+              },
+              "parameters": [
+                "\"P3ENDTURN\"",
+                ""
               ],
               "subInstructions": []
             }
