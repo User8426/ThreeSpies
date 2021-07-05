@@ -15,7 +15,7 @@
     "scaleMode": "linear",
     "sizeOnStartupMode": "",
     "useExternalSourceFiles": false,
-    "version": "0.2.1",
+    "version": "0.3.0",
     "name": "Three Spies Project",
     "author": "User#8426",
     "windowWidth": 800,
@@ -7555,7 +7555,7 @@
                   "parameters": [
                     "PlayerCountMiddle",
                     "=",
-                    "\"3\""
+                    "\"2\""
                   ],
                   "subInstructions": []
                 }
@@ -7563,18 +7563,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"Gane\"",
-                ""
-              ],
-              "subInstructions": []
-            },
             {
               "type": {
                 "inverted": false,
@@ -29581,9 +29569,9 @@
                 "value": "StrEqual"
               },
               "parameters": [
-                "GlobalVariableString(P1Location)",
+                "GlobalVariableString(P1Position)",
                 "!=",
-                "GlobalVariableString(P2Location)"
+                "GlobalVariableString(P2Position)"
               ],
               "subInstructions": []
             },
@@ -29601,9 +29589,9 @@
                 "value": "StrEqual"
               },
               "parameters": [
-                "GlobalVariableString(P1Location)",
+                "GlobalVariableString(P1Position)",
                 "!=",
-                "GlobalVariableString(P3Location)"
+                "GlobalVariableString(P3Position)"
               ],
               "subInstructions": []
             }
@@ -29727,9 +29715,9 @@
                 "value": "StrEqual"
               },
               "parameters": [
-                "GlobalVariableString(P1Location)",
+                "GlobalVariableString(P1Position)",
                 "=",
-                "GlobalVariableString(P2Location)"
+                "GlobalVariableString(P2Position)"
               ],
               "subInstructions": []
             },
@@ -29759,9 +29747,9 @@
                 "value": "StrEqual"
               },
               "parameters": [
-                "GlobalVariableString(P1Location)",
+                "GlobalVariableString(P1Position)",
                 "!=",
-                "GlobalVariableString(P3Location)"
+                "GlobalVariableString(P3Position)"
               ],
               "subInstructions": []
             }
@@ -29884,9 +29872,9 @@
                 "value": "StrEqual"
               },
               "parameters": [
-                "GlobalVariableString(P1Location)",
+                "GlobalVariableString(P1Position)",
                 "=",
-                "GlobalVariableString(P2Location)"
+                "GlobalVariableString(P2Position)"
               ],
               "subInstructions": []
             },
@@ -29909,9 +29897,9 @@
                 "value": "StrEqual"
               },
               "parameters": [
-                "GlobalVariableString(P1Location)",
+                "GlobalVariableString(P1Position)",
                 "!=",
-                "GlobalVariableString(P3Location)"
+                "GlobalVariableString(P3Position)"
               ],
               "subInstructions": []
             },
@@ -29995,9 +29983,9 @@
                 "value": "StrEqual"
               },
               "parameters": [
-                "GlobalVariableString(P1Location)",
+                "GlobalVariableString(P1Position)",
                 "=",
-                "GlobalVariableString(P2Location)"
+                "GlobalVariableString(P2Position)"
               ],
               "subInstructions": []
             },
@@ -30007,9 +29995,9 @@
                 "value": "StrEqual"
               },
               "parameters": [
-                "GlobalVariableString(P1Location)",
+                "GlobalVariableString(P1Position)",
                 "=",
-                "GlobalVariableString(P3Location)"
+                "GlobalVariableString(P3Position)"
               ],
               "subInstructions": []
             },
@@ -30213,9 +30201,9 @@
                 "value": "StrEqual"
               },
               "parameters": [
-                "GlobalVariableString(P2Location)",
+                "GlobalVariableString(P2Position)",
                 "!=",
-                "GlobalVariableString(P1Location)"
+                "GlobalVariableString(P1Position)"
               ],
               "subInstructions": []
             },
@@ -30225,9 +30213,9 @@
                 "value": "StrEqual"
               },
               "parameters": [
-                "GlobalVariableString(P2Location)",
+                "GlobalVariableString(P2Position)",
                 "!=",
-                "GlobalVariableString(P3Location)"
+                "GlobalVariableString(P3Position)"
               ],
               "subInstructions": []
             },
@@ -30360,9 +30348,9 @@
                 "value": "StrEqual"
               },
               "parameters": [
-                "GlobalVariableString(P2Location)",
+                "GlobalVariableString(P2Position)",
                 "=",
-                "GlobalVariableString(P1Location)"
+                "GlobalVariableString(P1Position)"
               ],
               "subInstructions": []
             },
@@ -30383,9 +30371,9 @@
                 "value": "StrEqual"
               },
               "parameters": [
-                "GlobalVariableString(P2Location)",
+                "GlobalVariableString(P2Position)",
                 "!=",
-                "GlobalVariableString(P3Location)"
+                "GlobalVariableString(P3Position)"
               ],
               "subInstructions": []
             },
@@ -30526,9 +30514,9 @@
                 "value": "StrEqual"
               },
               "parameters": [
-                "GlobalVariableString(P2Location)",
+                "GlobalVariableString(P2Position)",
                 "!=",
-                "GlobalVariableString(P1Location)"
+                "GlobalVariableString(P1Position)"
               ],
               "subInstructions": []
             },
@@ -30549,9 +30537,9 @@
                 "value": "StrEqual"
               },
               "parameters": [
-                "GlobalVariableString(P2Location)",
+                "GlobalVariableString(P2Position)",
                 "=",
-                "GlobalVariableString(P3Location)"
+                "GlobalVariableString(P3Position)"
               ],
               "subInstructions": []
             }
@@ -30684,9 +30672,9 @@
                 "value": "StrEqual"
               },
               "parameters": [
-                "GlobalVariableString(P2Location)",
+                "GlobalVariableString(P2Position)",
                 "=",
-                "GlobalVariableString(P1Location)"
+                "GlobalVariableString(P1Position)"
               ],
               "subInstructions": []
             },
@@ -30707,9 +30695,9 @@
                 "value": "StrEqual"
               },
               "parameters": [
-                "GlobalVariableString(P2Location)",
+                "GlobalVariableString(P2Position)",
                 "=",
-                "GlobalVariableString(P3Location)"
+                "GlobalVariableString(P3Position)"
               ],
               "subInstructions": []
             }
@@ -30829,9 +30817,9 @@
                 "value": "StrEqual"
               },
               "parameters": [
-                "GlobalVariableString(P3Location)",
+                "GlobalVariableString(P3Position)",
                 "!=",
-                "GlobalVariableString(P2Location)"
+                "GlobalVariableString(P2Position)"
               ],
               "subInstructions": []
             },
@@ -30852,9 +30840,9 @@
                 "value": "StrEqual"
               },
               "parameters": [
-                "GlobalVariableString(P1Location)",
+                "GlobalVariableString(P1Position)",
                 "!=",
-                "GlobalVariableString(P3Location)"
+                "GlobalVariableString(P3Position)"
               ],
               "subInstructions": []
             },
@@ -30987,9 +30975,9 @@
                 "value": "StrEqual"
               },
               "parameters": [
-                "GlobalVariableString(P1Location)",
+                "GlobalVariableString(P1Position)",
                 "=",
-                "GlobalVariableString(P3Location)"
+                "GlobalVariableString(P3Position)"
               ],
               "subInstructions": []
             },
@@ -31010,9 +30998,9 @@
                 "value": "StrEqual"
               },
               "parameters": [
-                "GlobalVariableString(P2Location)",
+                "GlobalVariableString(P2Position)",
                 "!=",
-                "GlobalVariableString(P3Location)"
+                "GlobalVariableString(P3Position)"
               ],
               "subInstructions": []
             },
@@ -31145,9 +31133,9 @@
                 "value": "StrEqual"
               },
               "parameters": [
-                "GlobalVariableString(P1Location)",
+                "GlobalVariableString(P1Position)",
                 "!=",
-                "GlobalVariableString(P3Location)"
+                "GlobalVariableString(P3Position)"
               ],
               "subInstructions": []
             },
@@ -31168,9 +31156,9 @@
                 "value": "StrEqual"
               },
               "parameters": [
-                "GlobalVariableString(P2Location)",
+                "GlobalVariableString(P2Position)",
                 "=",
-                "GlobalVariableString(P3Location)"
+                "GlobalVariableString(P3Position)"
               ],
               "subInstructions": []
             },
@@ -31303,9 +31291,9 @@
                 "value": "StrEqual"
               },
               "parameters": [
-                "GlobalVariableString(P1Location)",
+                "GlobalVariableString(P1Position)",
                 "=",
-                "GlobalVariableString(P3Location)"
+                "GlobalVariableString(P3Position)"
               ],
               "subInstructions": []
             },
@@ -31326,9 +31314,9 @@
                 "value": "StrEqual"
               },
               "parameters": [
-                "GlobalVariableString(P2Location)",
+                "GlobalVariableString(P2Position)",
                 "=",
-                "GlobalVariableString(P3Location)"
+                "GlobalVariableString(P3Position)"
               ],
               "subInstructions": []
             },
@@ -32337,6 +32325,114 @@
         {
           "disabled": false,
           "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::OnEvent"
+              },
+              "parameters": [
+                "\"P1Strikes\"",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "StrEqual"
+              },
+              "parameters": [
+                "GlobalVariableString(P1Position)",
+                "=",
+                "GlobalVariableString(P2)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::OnEvent"
+              },
+              "parameters": [
+                "\"P1Strikes\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -32515,7 +32611,7 @@
               "parameters": [
                 "LocateP2Text",
                 "=",
-                "\"P2 is at \" + GlobalVariableString(P2Location)"
+                "\"P2 is at \" + GlobalVariableString(P2Position)"
               ],
               "subInstructions": []
             },
@@ -32527,7 +32623,7 @@
               "parameters": [
                 "LocateP3Text",
                 "=",
-                "\"P3 is at \" +\nGlobalVariableString(P3Location)"
+                "\"P3 is at \" +\nGlobalVariableString(P3Position)"
               ],
               "subInstructions": []
             },
@@ -32550,8 +32646,8 @@
               },
               "parameters": [
                 "Intel",
-                "-",
-                "10"
+                "=",
+                "GlobalVariable(Intel)-10"
               ],
               "subInstructions": []
             },
@@ -32685,7 +32781,7 @@
               "parameters": [
                 "LocateP3Text",
                 "=",
-                "\"P3 is at \" +\nGlobalVariableString(P3Location)"
+                "\"P3 is at \" +\nGlobalVariableString(P3Position)"
               ],
               "subInstructions": []
             },
@@ -32697,7 +32793,7 @@
               "parameters": [
                 "LocateP1Text",
                 "=",
-                "\"P1 is at \" +\nGlobalVariableString(P1Location)"
+                "\"P1 is at \" +\nGlobalVariableString(P1Position)"
               ],
               "subInstructions": []
             },
@@ -32710,6 +32806,18 @@
                 "BlueActions",
                 "-",
                 "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Intel",
+                "=",
+                "GlobalVariable(Intel)-10"
               ],
               "subInstructions": []
             },
@@ -32855,7 +32963,7 @@
               "parameters": [
                 "LocateP2Text",
                 "=",
-                "\"P2 is at \" +\nGlobalVariableString(P2Location)"
+                "\"P2 is at \" +\nGlobalVariableString(P2Position)"
               ],
               "subInstructions": []
             },
@@ -32867,7 +32975,7 @@
               "parameters": [
                 "LocateP1Text",
                 "=",
-                "\"P1 is at \" +\nGlobalVariableString(P1Location)"
+                "\"P1 is at \" +\nGlobalVariableString(P1Position)"
               ],
               "subInstructions": []
             },
@@ -32903,6 +33011,18 @@
               "parameters": [
                 "\"LocateP3\"",
                 "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "Intel",
+                "=",
+                "GlobalVariable(Intel)-10"
               ],
               "subInstructions": []
             }
@@ -33433,7 +33553,7 @@
               "parameters": [
                 "LocateP2Text",
                 "=",
-                "\"P2 Strikes at \" + GlobalVariableString(P2Location)"
+                "\"P2 Strikes at \" + GlobalVariableString(P2Position)"
               ],
               "subInstructions": []
             }
@@ -33507,7 +33627,7 @@
               "parameters": [
                 "LocateP3Text",
                 "=",
-                "\"P3 Strikes at \" + GlobalVariableString(P2Location)"
+                "\"P3 Strikes at \" + GlobalVariableString(P2Position)"
               ],
               "subInstructions": []
             }
@@ -33760,7 +33880,7 @@
               "parameters": [
                 "LocateP2Text",
                 "=",
-                "\"P1 Strikes at \" + GlobalVariableString(P1Location)"
+                "\"P1 Strikes at \" + GlobalVariableString(P1Position)"
               ],
               "subInstructions": []
             }
@@ -33834,7 +33954,7 @@
               "parameters": [
                 "LocateP3Text",
                 "=",
-                "\"P3 Strikes at \" + GlobalVariableString(P3Location)"
+                "\"P3 Strikes at \" + GlobalVariableString(P3Position)"
               ],
               "subInstructions": []
             }
@@ -34087,7 +34207,7 @@
               "parameters": [
                 "LocateP1Text",
                 "=",
-                "\"P1 Strikes at \" + GlobalVariableString(P1Location)"
+                "\"P1 Strikes at \" + GlobalVariableString(P1Position)"
               ],
               "subInstructions": []
             }
@@ -34161,7 +34281,7 @@
               "parameters": [
                 "LocateP2Text",
                 "=",
-                "\"P2 Strikes at \" + GlobalVariableString(P2Location)"
+                "\"P2 Strikes at \" + GlobalVariableString(P2Position)"
               ],
               "subInstructions": []
             }
