@@ -15,7 +15,7 @@
     "scaleMode": "linear",
     "sizeOnStartupMode": "",
     "useExternalSourceFiles": false,
-    "version": "0.3.0",
+    "version": "0.3.1",
     "name": "Three Spies Project",
     "author": "User#8426",
     "windowWidth": 800,
@@ -973,7 +973,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.6999999999999997
+        "zoomFactor": 0.7100000000000003
       },
       "objectsGroups": [],
       "variables": [],
@@ -1029,14 +1029,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 186,
+          "height": 185,
           "layer": "",
           "locked": false,
           "name": "BoxHost",
           "persistentUuid": "d654ae4f-e037-4f5d-9a6e-628c072d06f0",
-          "width": 581,
-          "x": 96,
-          "y": 6,
+          "width": 519,
+          "x": -5,
+          "y": 0,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -1044,15 +1044,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 23,
           "layer": "",
           "locked": false,
           "name": "Host",
           "persistentUuid": "5fc02782-744f-49e9-9fac-2e67b7d04cc8",
-          "width": 0,
-          "x": 223,
-          "y": 91,
+          "width": 340,
+          "x": 75,
+          "y": 82,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -1092,22 +1092,6 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "GameScreen",
-          "persistentUuid": "a4d88227-2aa4-47a5-af2d-04805064ccaf",
-          "width": 0,
-          "x": 22,
-          "y": 221,
-          "zOrder": 9,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": true,
           "height": 209,
           "layer": "",
@@ -1134,6 +1118,38 @@
           "x": 532,
           "y": 596,
           "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 185,
+          "layer": "",
+          "locked": false,
+          "name": "SettingsBox",
+          "persistentUuid": "78e195b5-6fcb-454e-87ff-96033ae6a9bd",
+          "width": 250,
+          "x": 549,
+          "y": 2,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "SettingsText",
+          "persistentUuid": "baf8369e-3ba0-4a80-8228-9367c2fa3cc4",
+          "width": 0,
+          "x": 638,
+          "y": 85,
+          "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1398,6 +1414,64 @@
               ]
             }
           ]
+        },
+        {
+          "name": "SettingsBox",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Box.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "SettingsText",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Settings",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
       "events": [
@@ -1622,6 +1696,74 @@
                 "Player1",
                 "=",
                 "0"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "SettingsBox",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "SettingsText",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Settings\"",
+                ""
               ],
               "subInstructions": []
             }
@@ -7109,36 +7251,36 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarGlobal"
+                "value": "ModVarGlobalTxt"
               },
               "parameters": [
                 "Player1",
                 "=",
-                "0"
+                "\"0\""
               ],
               "subInstructions": []
             },
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarGlobal"
+                "value": "ModVarGlobalTxt"
               },
               "parameters": [
                 "Player2",
                 "=",
-                "0"
+                "\"0\""
               ],
               "subInstructions": []
             },
             {
               "type": {
                 "inverted": false,
-                "value": "ModVarGlobal"
+                "value": "ModVarGlobalTxt"
               },
               "parameters": [
                 "Player3",
                 "=",
-                "0"
+                "\"0\""
               ],
               "subInstructions": []
             }
@@ -16210,6 +16352,16 @@
             },
             {
               "type": {
+                "inverted": true,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
                 "inverted": false,
                 "value": "BuiltinCommonInstructions::Once"
               },
@@ -16344,6 +16496,16 @@
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
               "subInstructions": []
             }
           ],
@@ -16474,6 +16636,16 @@
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": [],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ],
               "subInstructions": []
             }
           ],
@@ -16693,12 +16865,12 @@
             {
               "type": {
                 "inverted": false,
-                "value": "VarGlobal"
+                "value": "VarGlobalTxt"
               },
               "parameters": [
                 "Player1",
                 "=",
-                "0"
+                "\"0\""
               ],
               "subInstructions": []
             }
@@ -16761,12 +16933,12 @@
             {
               "type": {
                 "inverted": false,
-                "value": "VarGlobal"
+                "value": "VarGlobalTxt"
               },
               "parameters": [
                 "Player2",
                 "=",
-                "0"
+                "\"0\""
               ],
               "subInstructions": []
             }
@@ -16795,12 +16967,12 @@
             {
               "type": {
                 "inverted": false,
-                "value": "VarGlobal"
+                "value": "VarGlobalTxt"
               },
               "parameters": [
                 "Player3",
                 "=",
-                "0"
+                "\"0\""
               ],
               "subInstructions": []
             }
@@ -17716,11 +17888,11 @@
             {
               "type": {
                 "inverted": false,
-                "value": "P2P::SendToAllVariable"
+                "value": "P2P::SendToAll"
               },
               "parameters": [
                 "\"P1Move\"",
-                "P1Position"
+                "VariableString(P1Position)"
               ],
               "subInstructions": []
             },
@@ -23496,7 +23668,7 @@
                 "value": "P2P::SendToAllVariable"
               },
               "parameters": [
-                "\"P1Move\"",
+                "\"P2Move\"",
                 "P2Position"
               ],
               "subInstructions": []
@@ -29571,16 +29743,8 @@
               "parameters": [
                 "GlobalVariableString(P1Position)",
                 "!=",
-                "GlobalVariableString(P2Position)"
+                "\"GlobalVariableString(P2Position)\""
               ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": [],
               "subInstructions": []
             },
             {
@@ -29591,24 +29755,20 @@
               "parameters": [
                 "GlobalVariableString(P1Position)",
                 "!=",
-                "GlobalVariableString(P3Position)"
+                "\"GlobalVariableString(P3Position)\""
               ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
               "subInstructions": []
             }
           ],
           "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "RedActions",
-                "-",
-                "1"
-              ],
-              "subInstructions": []
-            },
             {
               "type": {
                 "inverted": false,
@@ -29645,11 +29805,36 @@
             {
               "type": {
                 "inverted": false,
-                "value": "P2P::SendToAll"
+                "value": "P2P::SendToOne"
               },
               "parameters": [
+                "GlobalVariableString(Player2)",
                 "\"P1Strikes\"",
                 "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToOne"
+              },
+              "parameters": [
+                "GlobalVariableString(Player3)",
+                "\"P1Strikes\"",
+                "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
               ],
               "subInstructions": []
             }
@@ -29717,7 +29902,7 @@
               "parameters": [
                 "GlobalVariableString(P1Position)",
                 "=",
-                "GlobalVariableString(P2Position)"
+                "\"GlobalVariableString(P2Position)\""
               ],
               "subInstructions": []
             },
@@ -29749,24 +29934,12 @@
               "parameters": [
                 "GlobalVariableString(P1Position)",
                 "!=",
-                "GlobalVariableString(P3Position)"
+                "\"GlobalVariableString(P3Position)\""
               ],
               "subInstructions": []
             }
           ],
           "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "RedActions",
-                "-",
-                "1"
-              ],
-              "subInstructions": []
-            },
             {
               "type": {
                 "inverted": false,
@@ -29803,11 +29976,36 @@
             {
               "type": {
                 "inverted": false,
-                "value": "P2P::SendToAll"
+                "value": "P2P::SendToOne"
               },
               "parameters": [
+                "GlobalVariableString(Player3)",
                 "\"P1Strikes\"",
                 "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToOne"
+              },
+              "parameters": [
+                "GlobalVariableString(Player2)",
+                "\"P1Strikes\"",
+                "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
               ],
               "subInstructions": []
             }
@@ -29899,7 +30097,7 @@
               "parameters": [
                 "GlobalVariableString(P1Position)",
                 "!=",
-                "GlobalVariableString(P3Position)"
+                "\"GlobalVariableString(P3Position)\""
               ],
               "subInstructions": []
             },
@@ -29913,18 +30111,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "RedActions",
-                "-",
-                "1"
-              ],
-              "subInstructions": []
-            },
             {
               "type": {
                 "inverted": false,
@@ -29961,11 +30147,36 @@
             {
               "type": {
                 "inverted": false,
-                "value": "P2P::SendToAll"
+                "value": "P2P::SendToOne"
               },
               "parameters": [
+                "GlobalVariableString(Player3)",
                 "\"P1Strikes\"",
                 "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToOne"
+              },
+              "parameters": [
+                "GlobalVariableString(Player2)",
+                "\"P1Strikes\"",
+                "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
               ],
               "subInstructions": []
             }
@@ -29985,7 +30196,7 @@
               "parameters": [
                 "GlobalVariableString(P1Position)",
                 "=",
-                "GlobalVariableString(P2Position)"
+                "\"GlobalVariableString(P2Position)\""
               ],
               "subInstructions": []
             },
@@ -29997,7 +30208,7 @@
               "parameters": [
                 "GlobalVariableString(P1Position)",
                 "=",
-                "GlobalVariableString(P3Position)"
+                "\"GlobalVariableString(P3Position)\""
               ],
               "subInstructions": []
             },
@@ -30074,18 +30285,6 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "RedActions",
-                "-",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
                 "value": "PlayAnimation"
               },
               "parameters": [
@@ -30119,11 +30318,36 @@
             {
               "type": {
                 "inverted": false,
-                "value": "P2P::SendToAll"
+                "value": "P2P::SendToOne"
               },
               "parameters": [
+                "GlobalVariableString(Player3)",
                 "\"P1Strikes\"",
                 "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToOne"
+              },
+              "parameters": [
+                "GlobalVariableString(Player2)",
+                "\"P1Strikes\"",
+                "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
               ],
               "subInstructions": []
             }
@@ -30232,18 +30456,6 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "BlueActions",
-                "-",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
                 "value": "PlayAnimation"
               },
               "parameters": [
@@ -30277,11 +30489,36 @@
             {
               "type": {
                 "inverted": false,
-                "value": "P2P::SendToAll"
+                "value": "P2P::SendToOne"
               },
               "parameters": [
+                "GlobalVariableString(Player3)",
                 "\"P2Strikes\"",
                 "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToOne"
+              },
+              "parameters": [
+                "GlobalVariableString(Player1)",
+                "\"P2Strikes\"",
+                "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "BlueActions",
+                "-",
+                "1"
               ],
               "subInstructions": []
             }
@@ -30401,18 +30638,6 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "BlueActions",
-                "-",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
                 "value": "PlayAnimation"
               },
               "parameters": [
@@ -30435,11 +30660,36 @@
             {
               "type": {
                 "inverted": false,
-                "value": "P2P::SendToAll"
+                "value": "P2P::SendToOne"
               },
               "parameters": [
+                "GlobalVariableString(Player3)",
                 "\"P2Strikes\"",
                 "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToOne"
+              },
+              "parameters": [
+                "GlobalVariableString(Player1)",
+                "\"P2Strikes\"",
+                "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "BlueActions",
+                "-",
+                "1"
               ],
               "subInstructions": []
             }
@@ -30559,18 +30809,6 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "BlueActions",
-                "-",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
                 "value": "PlayAnimation"
               },
               "parameters": [
@@ -30593,11 +30831,36 @@
             {
               "type": {
                 "inverted": false,
-                "value": "P2P::SendToAll"
+                "value": "P2P::SendToOne"
               },
               "parameters": [
+                "GlobalVariableString(Player3)",
                 "\"P2Strikes\"",
                 "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToOne"
+              },
+              "parameters": [
+                "GlobalVariableString(Player1)",
+                "\"P2Strikes\"",
+                "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "BlueActions",
+                "-",
+                "1"
               ],
               "subInstructions": []
             }
@@ -30717,18 +30980,6 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "BlueActions",
-                "-",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
                 "value": "PlayAnimation"
               },
               "parameters": [
@@ -30751,11 +31002,36 @@
             {
               "type": {
                 "inverted": false,
-                "value": "P2P::SendToAll"
+                "value": "P2P::SendToOne"
               },
               "parameters": [
+                "GlobalVariableString(Player3)",
                 "\"P2Strikes\"",
                 "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToOne"
+              },
+              "parameters": [
+                "GlobalVariableString(Player1)",
+                "\"P2Strikes\"",
+                "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "BlueActions",
+                "-",
+                "1"
               ],
               "subInstructions": []
             }
@@ -30864,18 +31140,6 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "OrangeActions",
-                "-",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
                 "value": "PlayAnimation"
               },
               "parameters": [
@@ -30909,11 +31173,36 @@
             {
               "type": {
                 "inverted": false,
-                "value": "P2P::SendToAll"
+                "value": "P2P::SendToOne"
               },
               "parameters": [
+                "GlobalVariableString(Player2)",
                 "\"P3Strikes\"",
                 "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToOne"
+              },
+              "parameters": [
+                "GlobalVariableString(Player1)",
+                "\"P3Strikes\"",
+                "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "OrangeActions",
+                "-",
+                "1"
               ],
               "subInstructions": []
             }
@@ -31043,18 +31332,6 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "OrangeActions",
-                "-",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
@@ -31067,11 +31344,36 @@
             {
               "type": {
                 "inverted": false,
-                "value": "P2P::SendToAll"
+                "value": "P2P::SendToOne"
               },
               "parameters": [
+                "GlobalVariableString(Player2)",
                 "\"P3Strikes\"",
                 "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToOne"
+              },
+              "parameters": [
+                "GlobalVariableString(Player1)",
+                "\"P3Strikes\"",
+                "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "OrangeActions",
+                "-",
+                "1"
               ],
               "subInstructions": []
             }
@@ -31201,18 +31503,6 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "OrangeActions",
-                "-",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
@@ -31225,11 +31515,36 @@
             {
               "type": {
                 "inverted": false,
-                "value": "P2P::SendToAll"
+                "value": "P2P::SendToOne"
               },
               "parameters": [
+                "GlobalVariableString(Player2)",
                 "\"P3Strikes\"",
                 "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToOne"
+              },
+              "parameters": [
+                "GlobalVariableString(Player1)",
+                "\"P3Strikes\"",
+                "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "OrangeActions",
+                "-",
+                "1"
               ],
               "subInstructions": []
             }
@@ -31359,18 +31674,6 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "OrangeActions",
-                "-",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
@@ -31383,11 +31686,36 @@
             {
               "type": {
                 "inverted": false,
-                "value": "P2P::SendToAll"
+                "value": "P2P::SendToOne"
               },
               "parameters": [
+                "GlobalVariableString(Player2)",
                 "\"P3Strikes\"",
                 "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::SendToOne"
+              },
+              "parameters": [
+                "GlobalVariableString(Player1)",
+                "\"P3Strikes\"",
+                "\"\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "OrangeActions",
+                "-",
+                "1"
               ],
               "subInstructions": []
             }
@@ -31445,18 +31773,6 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "RedActions",
-                "-",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
@@ -31531,18 +31847,6 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "RedActions",
-                "-",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
@@ -31611,18 +31915,6 @@
               },
               "parameters": [
                 "P2"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "BlueActions",
-                "-",
-                "1"
               ],
               "subInstructions": []
             },
@@ -31703,18 +31995,6 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "BlueActions",
-                "-",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
@@ -31777,18 +32057,6 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "OrangeActions",
-                "-",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
@@ -31851,18 +32119,6 @@
             {
               "type": {
                 "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "OrangeActions",
-                "-",
-                "1"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
@@ -31919,18 +32175,6 @@
               },
               "parameters": [
                 "P3"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "OrangeActions",
-                "-",
-                "1"
               ],
               "subInstructions": []
             },
@@ -32004,18 +32248,6 @@
               },
               "parameters": [
                 "P2"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "BlueActions",
-                "-",
-                "1"
               ],
               "subInstructions": []
             },
@@ -32149,12 +32381,12 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Egal"
+                "value": "StrEqual"
               },
               "parameters": [
                 "VariableString(Client)",
                 "=",
-                "1"
+                "\"1\""
               ],
               "subInstructions": []
             },
@@ -32194,12 +32426,12 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Egal"
+                "value": "StrEqual"
               },
               "parameters": [
                 "VariableString(Client)",
                 "=",
-                "2"
+                "\"2\""
               ],
               "subInstructions": []
             },
@@ -32239,12 +32471,12 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Egal"
+                "value": "StrEqual"
               },
               "parameters": [
                 "VariableString(Client)",
                 "=",
-                "3"
+                "\"3\""
               ],
               "subInstructions": []
             },
@@ -32284,24 +32516,24 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Egal"
+                "value": "StrEqual"
               },
               "parameters": [
                 "VariableString(StrikedPlayers)",
                 "!=",
-                "1"
+                "\"1\""
               ],
               "subInstructions": []
             },
             {
               "type": {
                 "inverted": false,
-                "value": "Egal"
+                "value": "StrEqual"
               },
               "parameters": [
                 "VariableString(StrikedPlayers)",
                 "!=",
-                "0"
+                "\"0\""
               ],
               "subInstructions": []
             }
@@ -32369,25 +32601,187 @@
                 ""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Visible"
+              },
+              "parameters": [
+                "SRP1"
+              ],
+              "subInstructions": []
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "LocateP1Text",
+                "=",
+                "\"P1 Strikes at an unknown location\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "RedActions",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Montre"
+              },
+              "parameters": [
+                "LocateP1Text",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": []
         },
         {
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::OnEvent"
+              },
+              "parameters": [
+                "\"P2Strikes\"",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Visible"
+              },
+              "parameters": [
+                "SRP2"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "LocateP2Text",
+                "=",
+                "\"P2 Strikes at an unknown location\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "BlueActions",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Montre"
+              },
+              "parameters": [
+                "LocateP2Text",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": []
         },
         {
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [],
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::OnEvent"
+              },
+              "parameters": [
+                "\"P3Strikes\"",
+                ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Visible"
+              },
+              "parameters": [
+                "SRP3"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "LocateP3Text",
+                "=",
+                "\"P3 Strikes at an unknown location\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeAnimation"
+              },
+              "parameters": [
+                "OrangeActions",
+                "-",
+                "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Montre"
+              },
+              "parameters": [
+                "LocateP3Text",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": []
         },
         {
@@ -33507,7 +33901,7 @@
                 "value": "P2P::OnEvent"
               },
               "parameters": [
-                "\"P2Striked\"",
+                "\"P2Strikes\"",
                 ""
               ],
               "subInstructions": []
@@ -33556,6 +33950,17 @@
                 "\"P2 Strikes at \" + GlobalVariableString(P2Position)"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Montre"
+              },
+              "parameters": [
+                "LocateP2Text",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -33581,7 +33986,7 @@
                 "value": "P2P::OnEvent"
               },
               "parameters": [
-                "\"P3Striked\"",
+                "\"P3Strikes\"",
                 ""
               ],
               "subInstructions": []
@@ -33630,6 +34035,17 @@
                 "\"P3 Strikes at \" + GlobalVariableString(P2Position)"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Montre"
+              },
+              "parameters": [
+                "LocateP3Text",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -33834,7 +34250,7 @@
                 "value": "P2P::OnEvent"
               },
               "parameters": [
-                "\"P1Striked\"",
+                "\"P1Strikes\"",
                 ""
               ],
               "subInstructions": []
@@ -33878,9 +34294,20 @@
                 "value": "TextObject::String"
               },
               "parameters": [
-                "LocateP2Text",
+                "LocateP1Text",
                 "=",
                 "\"P1 Strikes at \" + GlobalVariableString(P1Position)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Montre"
+              },
+              "parameters": [
+                "LocateP1Text",
+                ""
               ],
               "subInstructions": []
             }
@@ -33908,7 +34335,7 @@
                 "value": "P2P::OnEvent"
               },
               "parameters": [
-                "\"P3Striked\"",
+                "\"P3Strikes\"",
                 ""
               ],
               "subInstructions": []
@@ -33957,6 +34384,17 @@
                 "\"P3 Strikes at \" + GlobalVariableString(P3Position)"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Montre"
+              },
+              "parameters": [
+                "LocateP3Text",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -34161,7 +34599,7 @@
                 "value": "P2P::OnEvent"
               },
               "parameters": [
-                "\"P1Striked\"",
+                "\"P1Strikes\"",
                 ""
               ],
               "subInstructions": []
@@ -34210,6 +34648,17 @@
                 "\"P1 Strikes at \" + GlobalVariableString(P1Position)"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Montre"
+              },
+              "parameters": [
+                "LocateP1Text",
+                ""
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -34235,7 +34684,7 @@
                 "value": "P2P::OnEvent"
               },
               "parameters": [
-                "\"P2Striked\"",
+                "\"P2Strikes\"",
                 ""
               ],
               "subInstructions": []
@@ -34282,6 +34731,17 @@
                 "LocateP2Text",
                 "=",
                 "\"P2 Strikes at \" + GlobalVariableString(P2Position)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Montre"
+              },
+              "parameters": [
+                "LocateP2Text",
+                ""
               ],
               "subInstructions": []
             }
@@ -35151,6 +35611,623 @@
           "ambientLightColorB": 0,
           "ambientLightColorG": 7166680,
           "ambientLightColorR": 0,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "name": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": []
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Settings",
+      "name": "Settings",
+      "oglFOV": 90,
+      "oglZFar": 500,
+      "oglZNear": 1,
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridB": 255,
+        "gridG": 180,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridR": 158,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "snap": true,
+        "windowMask": false,
+        "zoomFactor": 0.5700000000000002
+      },
+      "objectsGroups": [],
+      "variables": [
+        {
+          "name": "CustomIDEntry?",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 813,
+          "layer": "",
+          "locked": false,
+          "name": "BG",
+          "persistentUuid": "d8dac9b9-68ec-48e6-b860-8495853642fc",
+          "width": 800,
+          "x": -3,
+          "y": -6,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Background2",
+          "persistentUuid": "cd6099d1-484f-463b-bf58-be7b70c05f8e",
+          "width": 0,
+          "x": -232,
+          "y": -247,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 227,
+          "layer": "",
+          "locked": false,
+          "name": "Return",
+          "persistentUuid": "808fc8bf-46d4-47fe-bad3-de9b1743a5bf",
+          "width": 554,
+          "x": 120,
+          "y": 540,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 134,
+          "layer": "",
+          "locked": false,
+          "name": "ReturnText",
+          "persistentUuid": "c4266be8-3804-49ef-9ebb-c95a617c4134",
+          "width": 385,
+          "x": 207,
+          "y": 586,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 181,
+          "layer": "",
+          "locked": false,
+          "name": "Box",
+          "persistentUuid": "812f06e0-5201-43ae-a635-ac1374fdb5ed",
+          "width": 783,
+          "x": 11,
+          "y": 0,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 53,
+          "layer": "",
+          "locked": false,
+          "name": "IDText",
+          "persistentUuid": "7b067797-bba5-4566-899e-2b7470e73266",
+          "width": 679,
+          "x": 62,
+          "y": 30,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 28,
+          "layer": "",
+          "locked": false,
+          "name": "IDNew",
+          "persistentUuid": "2bff54c9-f4fb-4b83-b186-ad7287748b13",
+          "width": 668,
+          "x": 60,
+          "y": 105,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 197,
+          "layer": "",
+          "locked": false,
+          "name": "TextGrab",
+          "persistentUuid": "58fceb54-4b3c-4827-acf4-900b69c5ae86",
+          "width": 774,
+          "x": 4,
+          "y": -7,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "name": "BG",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\NewBackgroundMainMenu.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Background2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\NewBackgroundMainMenu.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Return",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Box.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "ReturnText",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "When you want to go back to the main menu, click this button.",
+          "font": "",
+          "characterSize": 36,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "name": "Box",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Box.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "IDText",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "If you would like a custom ID, type the ID you would like. To finish, press the enter key to confirm your ID.",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "IDNew",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Custom ID - ",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "name": "TextGrab",
+          "tags": "",
+          "type": "TextEntryObject::TextEntry",
+          "variables": [],
+          "behaviors": []
+        }
+      ],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Exit Settings",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "ReturnText",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Return",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ]
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonPressed"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Main Menu\"",
+                ""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Custom ID",
+          "comment2": ""
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Return"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "P2P::OverrideID"
+              },
+              "parameters": [
+                "GlobalVariableString(ID)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextEntryObject::Activated"
+              },
+              "parameters": [
+                "TextGrab"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "IDNew",
+                "=",
+                "\"Input: \" + TextGrab.VariableString(ID)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextEntryObject::Activated"
+              },
+              "parameters": [
+                "TextGrab"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarObjetTxt"
+              },
+              "parameters": [
+                "TextGrab",
+                "ID",
+                "=",
+                "TextGrab.String()"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 12452840,
+          "ambientLightColorG": 12996560,
+          "ambientLightColorR": 12706176,
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "name": "",
