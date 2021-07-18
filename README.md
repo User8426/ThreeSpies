@@ -3,7 +3,7 @@ A recreation of the mobile game, Two Spies but made for 3 players instead in one
 
 Link to the unofficial Two Spies Discord where 1v1v1 matches can be set up / do matchmaking for this game - https://discord.gg/rjN2CYGdF5
 
-Installatiom
+Installation
 
 Windows - Unzip the zip file and run the executable or use the installer and run the new shortcut on the desktop / start menu.
 MacOS - Unzip the zip file and run the excutable.
