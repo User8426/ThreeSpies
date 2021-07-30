@@ -9,7 +9,7 @@ Installation
 
 Windows - Unzip the zip file and run the executable or use the installer and run the new shortcut on the desktop / start menu.
 
-MacOS - Unzip the zip file and run the excutable.
+MacOS - Unzip the zip file and run the executable.
 
 Linux - Run the .appimage file and install. 
 
