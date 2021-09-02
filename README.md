@@ -29,5 +29,7 @@ Legal
 
 Some assets contained are copyrighted and as such can not be distributed not part of the game or without a license.
 The following assets are copyrighted and are licensed:
+
 Sad_-_Difficult_Decision.ogg
+
 Peaceful_-_Secret_Place.ogg
