@@ -1,0 +1,3 @@
+Numpad0 = Start Blue Turn
+Numpad1 = Start Orange Turn
+Numpad2 = Start Red Turn
