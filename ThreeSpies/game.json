@@ -21,8 +21,8 @@
     "windowWidth": 800,
     "windowHeight": 800,
     "latestCompilationDirectory": "C:\\Users\\Home\\Desktop\\GDevelop\\Manual Export Folder\\Three Spies\\HTML5\\Build 1",
-    "maxFPS": 60,
-    "minFPS": 30,
+    "maxFPS": 100,
+    "minFPS": 100,
     "verticalSync": false,
     "platformSpecificAssets": {
       "android-icon-144": "android-icon-144.png",
@@ -9144,8 +9144,8 @@
       "oglZNear": 1,
       "r": 209,
       "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
-      "title": "",
+      "stopSoundsOnStartup": false,
+      "title": "Striking [REDACTED]",
       "v": 209,
       "uiSettings": {
         "grid": false,
@@ -9156,7 +9156,7 @@
         "gridOffsetY": 0,
         "gridColor": 10401023,
         "snap": true,
-        "zoomFactor": 0.8100000000000023,
+        "zoomFactor": 0.5700000000000021,
         "windowMask": false
       },
       "objectsGroups": [
@@ -11945,6 +11945,22 @@
           "x": -59,
           "y": 157,
           "zOrder": 131,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "NewObject",
+          "persistentUuid": "3ed07a99-66c2-4d83-a0f2-d609f96794ae",
+          "width": 0,
+          "x": 543,
+          "y": 608,
+          "zOrder": 132,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -20452,6 +20468,32 @@
               ]
             }
           ]
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "NewObject",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "FPSDisplayer",
+              "type": "FPS::FPSDisplayer",
+              "prefix": "FPS: "
+            }
+          ],
+          "string": "Text",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
         }
       ],
       "events": [
@@ -54914,7 +54956,7 @@
           "comment2": ""
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -54960,7 +55002,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -54982,7 +55024,7 @@
           "actions": [],
           "events": [
             {
-              "disabled": false,
+              "disabled": true,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -55018,7 +55060,7 @@
           ]
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -55040,7 +55082,7 @@
           "actions": [],
           "events": [
             {
-              "disabled": false,
+              "disabled": true,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -55076,7 +55118,7 @@
           ]
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -55098,7 +55140,7 @@
           "actions": [],
           "events": [
             {
-              "disabled": false,
+              "disabled": true,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -55134,7 +55176,7 @@
           ]
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -55155,7 +55197,7 @@
           "actions": [],
           "events": [
             {
-              "disabled": false,
+              "disabled": true,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -55192,7 +55234,7 @@
           ]
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -55213,7 +55255,7 @@
           "actions": [],
           "events": [
             {
-              "disabled": false,
+              "disabled": true,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -55250,7 +55292,7 @@
           ]
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -55271,7 +55313,7 @@
           "actions": [],
           "events": [
             {
-              "disabled": false,
+              "disabled": true,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -55308,7 +55350,7 @@
           ]
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -55540,7 +55582,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -55772,7 +55814,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -56004,7 +56046,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -56072,7 +56114,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -56140,7 +56182,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -56208,7 +56250,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -56476,7 +56518,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -56744,7 +56786,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -57020,7 +57062,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -57222,7 +57264,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -57424,7 +57466,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -57626,7 +57668,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -57816,7 +57858,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -58006,7 +58048,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -58196,7 +58238,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -58372,7 +58414,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -58548,7 +58590,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -58724,7 +58766,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -58954,7 +58996,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -59184,7 +59226,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -59414,7 +59456,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -59582,7 +59624,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -59750,7 +59792,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -59918,7 +59960,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -60086,7 +60128,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -60254,7 +60296,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -60422,7 +60464,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -60590,7 +60632,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -60758,7 +60800,7 @@
           "events": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -62545,7 +62587,12 @@
           "effects": []
         }
       ],
-      "behaviorsSharedData": []
+      "behaviorsSharedData": [
+        {
+          "name": "FPSDisplayer",
+          "type": "FPS::FPSDisplayer"
+        }
+      ]
     },
     {
       "b": 209,
@@ -71142,6 +71189,230 @@
     }
   ],
   "eventsFunctionsExtensions": [
+    {
+      "author": "Ahnaf30e",
+      "description": "Adds expressions to get the current FPS and a behavior to display the current FPS easily.\n\nThe FPS, Frames Per Second, describes how many times in the last second your game got updated. An update consists in running all the behaviors, objects, and events sheet code, before rendering the new game state into the game window. The higher the FPS, the more it manages to update in a second, influencing how fluid and performant your game looks.",
+      "extensionNamespace": "",
+      "fullName": "FPS",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iSWNvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBkPSJNMzAsM2gtMkg0SDJDMS40LDMsMSwzLjQsMSw0czAuNCwxLDEsMWgxdjE2YzAsMC42LDAuNCwxLDEsMWg5LjhsLTUuNSw2LjNjLTAuNCwwLjQtMC4zLDEsMC4xLDEuNEM4LjUsMjkuOSw4LjgsMzAsOSwzMA0KCWMwLjMsMCwwLjYtMC4xLDAuOC0wLjNsNS4yLTZWMjhjMCwwLjYsMC40LDEsMSwxczEtMC40LDEtMXYtNC4zbDUuMiw2YzAuMiwwLjIsMC41LDAuMywwLjgsMC4zYzAuMiwwLDAuNS0wLjEsMC43LTAuMg0KCWMwLjQtMC40LDAuNS0xLDAuMS0xLjRMMTguMiwyMkgyOGMwLjYsMCwxLTAuNCwxLTFWNWgxYzAuNiwwLDEtMC40LDEtMVMzMC42LDMsMzAsM3ogTTI0LjgsOC42bC00LDZjLTAuMywwLjQtMC44LDAuNi0xLjMsMC4zDQoJTDE1LjgsMTNoLTMuNGwtMy43LDMuN0M4LjUsMTYuOSw4LjMsMTcsOCwxN3MtMC41LTAuMS0wLjctMC4zYy0wLjQtMC40LTAuNC0xLDAtMS40bDQtNGMwLjItMC4yLDAuNC0wLjMsMC43LTAuM2g0DQoJYzAuMiwwLDAuMywwLDAuNCwwLjFsMy4yLDEuNmwzLjUtNS4zYzAuMy0wLjUsMC45LTAuNiwxLjQtMC4zQzI1LDcuNSwyNS4xLDguMSwyNC44LDguNnoiLz4NCjwvc3ZnPg0K",
+      "name": "FPS",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/Glyphster Pack/Master/SVG/SEO/SEO_board_performance_profit.svg",
+      "shortDescription": "Adds expressions and a behavior to get and display the game FPS.",
+      "version": "1.0.0",
+      "tags": [
+        "fps",
+        "frames",
+        "per",
+        "second",
+        "performance",
+        "speed"
+      ],
+      "dependencies": [],
+      "eventsFunctions": [
+        {
+          "description": "Return your game's current FPS count.",
+          "fullName": "FPS (Frames per second)",
+          "functionType": "Expression",
+          "name": "FPS",
+          "private": false,
+          "sentence": "",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetReturnNumber"
+                  },
+                  "parameters": [
+                    "ceil(1/TimeDelta())"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": [],
+          "objectGroups": []
+        },
+        {
+          "description": "Return your game's current FPS count, with more control over rounding.",
+          "fullName": "Precise FPS (Frames per second)",
+          "functionType": "Expression",
+          "name": "PreciseFPS",
+          "private": false,
+          "sentence": "",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SetReturnNumber"
+                  },
+                  "parameters": [
+                    "(ceil(1/TimeDelta()*(GetArgumentAsNumber(\"accuracy\") * 10))) / (GetArgumentAsNumber(\"accuracy\") * 10)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "The accuracy of the FPS.",
+              "longDescription": "This tells how many numbers after the period should be shown.",
+              "name": "accuracy",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "eventsBasedBehaviors": [
+        {
+          "description": "Makes a text object display the current FPS.",
+          "fullName": "FPS Displayer",
+          "name": "FPSDisplayer",
+          "objectType": "TextObject::Text",
+          "eventsFunctions": [
+            {
+              "description": "",
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPreEvents",
+              "private": false,
+              "sentence": "",
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "Object.Behavior::Propertyprefix() + ToString(FPS::FPS())"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ],
+              "parameters": [
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Object",
+                  "longDescription": "",
+                  "name": "Object",
+                  "optional": false,
+                  "supplementaryInformation": "TextObject::Text",
+                  "type": "object"
+                },
+                {
+                  "codeOnly": false,
+                  "defaultValue": "",
+                  "description": "Behavior",
+                  "longDescription": "",
+                  "name": "Behavior",
+                  "optional": false,
+                  "supplementaryInformation": "FPS::FPSDisplayer",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "FPS: ",
+              "type": "String",
+              "label": "The prefix before the FPS count",
+              "description": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "prefix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "author": "Arthur Pacaud (arthuro555)",
+      "description": "Allows handling all events at once instead of one per frame. \n\n### Usage:\n![Screenshot of the way to use the extension](https://i.imgur.com/DkYfM7W.png)",
+      "extensionNamespace": "",
+      "fullName": "Advanced p2p event handling",
+      "helpPath": "",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iSWNvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQoJLnN0MXtmaWxsOm5vbmU7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjI7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjEwO30NCjwvc3R5bGU+DQo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjMsMTVIOWMtMS4xLDAtMi0wLjktMi0yVjRjMC0xLjEsMC45LTIsMi0yaDE0YzEuMSwwLDIsMC45LDIsMnY5QzI1LDE0LjEsMjQuMSwxNSwyMywxNXoiLz4NCjxsaW5lIGNsYXNzPSJzdDAiIHgxPSI3IiB5MT0iNiIgeDI9IjI1IiB5Mj0iNiIvPg0KPGxpbmUgY2xhc3M9InN0MCIgeDE9IjExIiB5MT0iNSIgeDI9IjExIiB5Mj0iMiIvPg0KPHJlY3QgeD0iMyIgeT0iMjMiIGNsYXNzPSJzdDAiIHdpZHRoPSI2IiBoZWlnaHQ9IjYiLz4NCjxyZWN0IHg9IjEzIiB5PSIyMyIgY2xhc3M9InN0MCIgd2lkdGg9IjYiIGhlaWdodD0iNiIvPg0KPHJlY3QgeD0iMjMiIHk9IjIzIiBjbGFzcz0ic3QwIiB3aWR0aD0iNiIgaGVpZ2h0PSI2Ii8+DQo8cG9seWxpbmUgY2xhc3M9InN0MCIgcG9pbnRzPSI2LDIzIDYsMTkgMjYsMTkgMjYsMjMgIi8+DQo8bGluZSBjbGFzcz0ic3QwIiB4MT0iMTYiIHkxPSIxNSIgeDI9IjE2IiB5Mj0iMjMiLz4NCjwvc3ZnPg0K",
+      "name": "AdvancedP2PEventHandling",
+      "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/Line Hero Pack/Master/SVG/Applications and Programming/Applications and Programming_sitemap_map_ux_application.svg",
+      "shortDescription": "Allows handling all received P2P events at once instead of one per frame. It is more complex but also potentially more performant.",
+      "version": "1.0.0",
+      "tags": [
+        "p2p",
+        "performance",
+        "advanced"
+      ],
+      "dependencies": [],
+      "eventsFunctions": [
+        {
+          "description": "Marks the event as handled, to go on to the next.",
+          "fullName": "Dismiss event",
+          "functionType": "Action",
+          "name": "DissmissEvent",
+          "private": false,
+          "sentence": "Dismiss event _PARAM1_ as handled",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": "if (!gdjs.evtTools.p2p) return;\nif (gdjs.evtTools.p2p.getEvent)\n    gdjs.evtTools.p2p\n        .getEvent()\n        .popData();\n// Pre beta104 compatibility\nelse {\n    const event = gdjs.evtTools.p2p.lastEventData[eventsFunctionContext.getArgument(\"eventName\")];\n    if (Array.isArray(event) && event.length > 0) event.pop();\n};\n",
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": true
+            }
+          ],
+          "parameters": [
+            {
+              "codeOnly": false,
+              "defaultValue": "",
+              "description": "The event to dismiss",
+              "longDescription": "",
+              "name": "eventName",
+              "optional": false,
+              "supplementaryInformation": "",
+              "type": "string"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "eventsBasedBehaviors": []
+    },
     {
       "author": "Tristan Rhodes (https://victrisgames.itch.io/)",
       "description": "When the checkbox is checked, the condition `Checked` is verified.\nA halo appears when the mouse hovers near the checkbox.\n\nCheckbox cannot be toggled by users if any of these are true:\n- Checkbox is hidden\n- Checkbox's layer is hidden\n- Checkbox is disabled\n\nCheckbox can always be changed by an action.",
